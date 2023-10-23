@@ -1,0 +1,113 @@
+/*****************************
+    * Main CSS file for site
+    *Zach Ahr 10/21/2023 Main.css
+ *****************************/
+
+:root {
+    --global-color-1: #002280;
+}
+
+body {
+    background-color: #ccc;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/***Italics when hovering over clickable links*/
+a:focus,
+a:hover {
+    font-style: italic;
+}
+
+img {
+    max-width: 20%;
+    display: block;
+}
+
+head {
+    width: 25%;
+    float: center;   
+}
+
+/*Shadow over quote on main page*/
+.shadow {
+    text-shadow: 1px 1px 1px var(--global-color-1);
+}
+
+/*Navigation CSS margins and width*/
+nav {
+    float: center;
+    margin: 1em 1em 0 0;
+    width: 70%
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.50em;
+}
+
+nav li a {
+    display: block;
+    color: #000000;
+    text-align: left;
+    padding: 0.1em 0.5em;
+    text-decoration: none;
+}
+
+/*Main CSS*/
+main {
+  clear: left;
+  background-color: #fff;
+  padding: .9%;
+  font-size: 1.25em;
+}
+
+/****About Section CSS*****/
+#about, #life, #school, #overview, #dog {
+    clear: left;
+    border-top: 0.1px solid #000;
+    border-bottom: 0.1px solid #000;
+    padding: .1% .1%;
+}
+
+#about, #life, #school, #overview, #dog {
+    width: 15%;
+    float: left;
+    margin: 0 2%;
+}
+
+#about dt, #life dt, #school dt, #overview dt, #dog dt {
+    font-weight: bold;
+}
+
+#dog img {
+    max-width: 100%;
+    display: block;
+}
+
+/****Contact  Page CSS*****/
+#contact {
+    text-align: center;
+}
+
+#contact a {
+    color: #0a0066;
+    text-decoration: none;
+}
+
+#contact img {
+    text-align: center;
+    display: block;
+}
+
+/*Footer CSS*/
+footer p {
+    font-size: 0.75em;
+    text-align: center;
+    color: #000000;
+    padding: 0 1em;
+}
+
+footer p a {
+    color: #000000;
+    text-decoration: none;
+}
