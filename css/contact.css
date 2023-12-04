@@ -1,3 +1,5 @@
+/****Contact  Page CSS*****/
+
 /*****************************
     * Main CSS file for site
     *Zach Ahr 10/21/2023 Main.css
@@ -40,16 +42,6 @@ a:hover {
 img {
     max-width: 20%;
     display: block;
-}
-
-head {
-    width: 25%;
-    float: center;   
-}
-
-/*Shadow over quote on main page*/
-.shadow {
-    text-shadow: 1px 1px 1px var(--global-color-1);
 }
 
 /*Navigation CSS*/
@@ -147,6 +139,81 @@ footer p{
     text-align: center;
 }
 
+/*Navigation Menu */
+#nav_menu {
+    clear:left;
+}
+
+#nav_menu ul {
+    list-style: none;
+    position: relative;
+}
+
+#nav_menu ul li {
+    float: left;
+    width: 20%;
+}
+
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%
+}
+
+#nav_menu ul ul li {
+    float: none;
+}
+
+#nav_menu ul li:hover > ul {
+    display: block;
+}
+
+#nav_menu > ul::after {
+    content: "";
+    display: block;
+}
+
+#nav_menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+#nav_menu ul li:hover ul {
+    width: 100%;
+}
+
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    color: #000000;
+    padding: 0.7em ;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+}
+
+#nav_menu ul li a.current {
+    color: blue;
+}
+
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+    background-color: gray;
+}
+
+
+#contact {
+    text-align: center;
+}
+
+#contact a {
+    color: #0a0066;
+    text-decoration: none;
+}
+
+#contact img {
+    text-align: center;
+    display: block;
+}
 
 #mobile_menu {
     display: none;

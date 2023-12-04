@@ -3,21 +3,32 @@
 <html lang ="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Contact Me</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/slicknav.css" />
     <link rel="zalogo icon" href="images/zalogo.ico" />
+    <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+          $("#nav_menu").slicknav({prependTo:"#mobile_menu" });
+      });
+  </script>   
 </head>
 <body>
    <header>
     <h2>Contact Information</h2>
    </header>
-   <nav>
+
+<nav id="mobile_menu"></nav>
+<nav id="nav_menu">
        <ul>
             <li><a href="index.html">Home</a></li> 
             <li><a href="aboutme.html">About Me</a></li>
             <li><a href="interests.html">Interests</a></li>
             <li><a href="goals.html">Goals & Ambitions</a></li>
-            <li><a href="contact.html">Contact Me </a></li>
+            <li><a href="contact.html" class="current">Contact Me</a></li>
        </ul>
     </nav>
    <main>

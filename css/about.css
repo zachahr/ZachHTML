@@ -1,0 +1,22 @@
+/****About Section CSS*****/
+#about, #life, #school, #overview, #dog {
+    clear: left;
+    border-top: 0.1px solid #000;
+    border-bottom: 0.1px solid #000;
+    padding: .1% .1%;
+}
+
+#about, #life, #school, #overview, #dog {
+    width: 15%;
+    float: left;
+    margin: 0 2%;
+}
+
+#about dt, #life dt, #school dt, #overview dt, #dog dt {
+    font-weight: bold;
+}
+
+#dog img {
+    max-width: 100%;
+    display: block;
+}
