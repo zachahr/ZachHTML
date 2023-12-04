@@ -1,9 +1,9 @@
 /*****************************
     * Main CSS file for site
-    *Zach Ahr 10/21/2023 Main.css
+    * Zach Ahr 10/21/2023 Main.css
  *****************************/
- /* Background Image */ 
- html {
+/* Background Image */
+html {
     background-image: url("../images/background.jpg");
 }
 
@@ -11,31 +11,34 @@
     --global-color-1: #002280;
 }
 
-/*Shadow over quote on main page*/
+/* Shadow over quote on main page */
 .shadow {
     text-shadow: 1px 1px 1px var(--global-color-1);
 }
 
-/*Main CSS*/
+/* Main CSS */
 main {
     clear: left;
     background-color: #fff;
     padding: .12%;
     font-size: 1.25em;
-  }
- 
-h1, h2, h3, p {
+}
+
+h1,
+h2,
+h3,
+p {
     margin: 6;
     padding: 6;
-}  
+}
 
-/* Header Gradient */ 
- header {
-    background-image: linear-gradient(45deg,white 0%, rgb(1, 1, 128) 75%, black 100%);
+/* Header Gradient */
+header {
+    background-image: linear-gradient(45deg, white 0%, rgb(1, 1, 128) 75%, black 100%);
     padding: .10900em 0.5%;
 }
 
-/* Zach Picture */ 
+/* Zach Picture */
 header img {
     float: left;
     padding-right: 1.875%;
@@ -48,7 +51,7 @@ header h2 {
     font-size: 230%;
 }
 
-header h3{
+header h3 {
     font-size: 125%;
     padding-bottom: .75em;
 }
@@ -58,15 +61,15 @@ body {
     font-family: 'Roboto Slab', serif;
 }
 
-/***Italics when hovering over clickable links*/
+/*** Italics when hovering over clickable links */
 a:focus,
 a:hover {
     font-style: italic;
 }
 
-/*Navigation CSS*/
+/* Navigation CSS */
 #nav_menu {
-    clear:left;
+    clear: left;
 }
 
 #nav_menu ul {
@@ -89,11 +92,11 @@ a:hover {
     float: none;
 }
 
-#nav_menu ul li:hover > ul {
+#nav_menu ul li:hover>ul {
     display: block;
 }
 
-#nav_menu > ul::after {
+#nav_menu>ul::after {
     content: "";
     display: block;
 }
@@ -104,7 +107,7 @@ a:hover {
 }
 
 #nav li {
-    font-family: 'Francois One',sans-serif;
+    font-family: 'Francois One', sans-serif;
 }
 
 #nav_menu ul li:hover ul {
@@ -115,7 +118,7 @@ a:hover {
     text-align: center;
     display: block;
     color: #000000;
-    padding: 0.7em ;
+    padding: 0.7em;
     text-decoration: none;
     background-color: black;
     color: white;
@@ -125,9 +128,11 @@ a:hover {
     color: blue;
 }
 
-#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+#nav_menu ul li a:hover,
+#nav_menu ul li a:focus {
     background-color: gray;
 }
+
 /* Section */
 section {
     width: 72.5%;
@@ -159,11 +164,12 @@ section a {
     color: orange;
 }
 
-section a:link, main a:visited {
+section a:link,
+main a:visited {
     color: orange;
 }
 
-/*Footer CSS*/
+/* Footer CSS */
 footer p {
     font-size: 0.75em;
     text-align: center;
@@ -183,7 +189,7 @@ footer {
     background-image: linear-gradient(45deg, black 0%, rgb(25, 0, 255) 25%, white 100%);
 }
 
-footer p{
+footer p {
     font-size: 90%;
     text-align: center;
 }
@@ -194,47 +200,39 @@ footer p{
 }
 
 #mobile_menu {
-  display: none;
+    display: none;
 }
-  
+
 @media only screen and (max-width: 800px) {
-  html {
-      background-image: none;
-  }
-  body {
-    font-size: 90%;
-    box-shadow: none;
-  }
+    html {
+        background-image: none;
+    }
+    body {
+        font-size: 90%;
+        box-shadow: none;
+    }
 }
-  
+
 @media only screen and (max-width: 667px) {
-  #nav_menu {
-      display: none;
-   }
+    #nav_menu {
+        display: none;
+    }
     #mobile_menu {
-      display: block;
+        display: block;
     }
     header h2 {
-     font-size: 200%;
+        font-size: 200%;
     }
-    section{
-      width: 90%;
-      float: none;
-      padding-left: 5%;
-      padding-bottom: .5em;
+    section {
+        width: 90%;
+        float: none;
+        padding-left: 5%;
+        padding-bottom: .5em;
     }
-    aside {
-      width: 90%;
-      float: none;
-      padding: 0 5% 1em 5%;
+    .tablet-only {
+        display: block;
     }
-    #nav_list ul {
-      width: 50%;
-      padding-left: 25%;
-      text-align: center;
+    .desktop-only {
+        display: none;
     }
-    #nav_list ul li a {
-      padding-left: 0;
-    }
-    
 }
