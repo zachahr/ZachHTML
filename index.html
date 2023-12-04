@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <!---Zach Ahr Portfolio 10/15/2023-->
-<html lang="en">
-<head>
+<html lang="en"
+  <head>
     <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Zach Ahr</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="zalogo icon" href="images/zalogo.ico" />    
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/slicknav.css" />
+    <link rel="zalogo icon" href="images/zalogo.ico" />
+    <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+          $("#nav_menu").slicknav({prependTo:"#mobile_menu" });
+      });
+  </script>   
 </head>
+
+
 <body>
 
     <!--Header & Zach Picture-->
@@ -23,18 +34,20 @@
 
 
 <!----Navigation-->
-    <nav>
+<nav id="mobile_menu"></nav>
+<nav id="nav_menu">
         <ul>
-            <li><a href="template.html">Home</a></li> 
-            <li><a href="aboutme.html">About Me</a></li>
-            <li><a href="interests.html">Interests</a></li>
-            <li><a href="goals.html">Goals & Ambitions</a></li>
-            <li><a href="contact.html">Contact Me </a></li>
+           <li><a href="template.html" class="current">Home</a></li> 
+           <li><a href="aboutme.html">About Me</a></li>
+           <li><a href="interests.html">Interests</a></li>
+           <li><a href="goals.html">Goals & Ambitions</a></li>
+           <li><a href="contact.html">Contact Me </a></li>
         </ul>
     </nav>
 <!----Main Webpage Content-->           
     <main>
-         <div id="intro">
+         <section>
+         <h3>Welcome to my website. <br>Please come in and stay awhile!</h3>
             <p> Hello everyone! I'm Zach and welcome to my website.</p> 
         
             <p>I'm twenty three years old and I am currently a college CIS student at Colorado State Univesity-Pueblo! My concentration is in Cybersecurity, but I enjoy learning about everything to do with CIS in all of it's related pathways!</p>
@@ -43,7 +56,7 @@
 
             <p>I'm glad you took the time to visit and learn about me! Hopefully I can learn about you too! &#128515;</p>
         
-         </div>
+         </section>
     </main>
 <!----Footer-->
     <footer>
