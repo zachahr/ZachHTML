@@ -2,46 +2,54 @@
 <!---Zach Ahr Portfolio 10/15/2023-->
 <html lang="en"
   <head>
-    <meta charset="utf-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Zach Ahr</title>
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/slicknav.css" />
-    <link rel="zalogo icon" href="images/zalogo.ico" />
-    <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/jquery.slicknav.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-          $("#nav_menu").slicknav({prependTo:"#mobile_menu" });
-      });
-  </script>   
+     <meta charset="utf-8"> 
+     <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <title>Zach Ahr</title>
+     <link rel="stylesheet" href="css/main.css" />
+     <link rel="stylesheet" href="css/slicknav.css" />
+     <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab&display=swap" rel="stylesheet">
+     <link rel="zalogo icon" href="images/zalogo.ico" />
+     <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="js/jquery.slicknav.min.js"></script>
+     <script type="text/javascript">
+        $(document).ready(function () {
+             $("#nav_menu").slicknav({prependTo:"#mobile_menu" });
+        });
+   </script>   
 </head>
 
-
+<!--Header & Zach Picture-->
 <body>
-
-    <!--Header & Zach Picture-->
     <header>
+        <img src="images/zachahr.JPG" alt="Picture of Zach Ahr">
         <h1> Zach Ahr's Portfolio</h1>
         <blockquote> 
             <span class="shadow"> &ldquo;Courage is grace under pressure.&rdquo; - Ernest Hemingway</span>
         </blockquote>
-        <img src="images/zachahr.JPG" alt="Picture of Zach Ahr">
     </header>
 
 
 
 <!----Navigation-->
-<nav id="mobile_menu"></nav>
-<nav id="nav_menu">
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
         <ul>
            <li><a href="template.html" class="current">Home</a></li> 
-           <li><a href="aboutme.html">About Me</a></li>
            <li><a href="interests.html">Interests</a></li>
            <li><a href="goals.html">Goals & Ambitions</a></li>
            <li><a href="contact.html">Contact Me </a></li>
-        </ul>
+           <li>
+             <a href="aboutme.html">About Me</a>
+             <ul>
+               <li><a href="aboutme/earlylife.html">Early Life</a></li>
+               <li><a href="aboutme/education.html">Education</a></li>
+               <li><a href="aboutme/hobbies.html">Hobbies</a></li>
+               <li><a href="aboutme/derek.html">Derek The Dog</a></li>
+         </ul>
+        </li>
+      </ul> 
     </nav>
+
 <!----Main Webpage Content-->           
     <main>
          <section>
@@ -53,9 +61,17 @@
             <p> I also have several goals relating to my educational major but I also am multi-faceted in my interests outside of school! I will be going over them on this website such as my passions in my personal life, academica, career and my hobbies!</p>
 
             <p>I'm glad you took the time to visit and learn about me! Hopefully I can learn about you too! &#128515;</p>
-        
+
+            <p class='desktop-only'>
+                This paragraph is visible only in desktop mode and contains a sudo element, defined in desotop media query and is nothing but a 'tomato' colored circle created as box with 50 % border radius
+            </p>
+            
+            <p class='tablet-only'>
+                This paragraph is visible only in tablet mode
+             </p>
          </section>
     </main>
+
 <!----Footer-->
     <footer>
         <p>&copy; 2023, Zach Ahr</p>

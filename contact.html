@@ -7,6 +7,7 @@
     <title>Contact Me</title>
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/slicknav.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="zalogo icon" href="images/zalogo.ico" />
     <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.slicknav.min.js"></script>
@@ -21,16 +22,26 @@
     <h2>Contact Information</h2>
    </header>
 
-<nav id="mobile_menu"></nav>
-<nav id="nav_menu">
+   <nav id="mobile_menu"></nav>
+   <nav id="nav_menu">
        <ul>
-            <li><a href="index.html">Home</a></li> 
-            <li><a href="aboutme.html">About Me</a></li>
-            <li><a href="interests.html">Interests</a></li>
-            <li><a href="goals.html">Goals & Ambitions</a></li>
-            <li><a href="contact.html" class="current">Contact Me</a></li>
-       </ul>
-    </nav>
+          <li><a href="index.html">Home</a></li> 
+          <li><a href="interests.html">Interests</a></li>
+          <li><a href="goals.html">Goals & Ambitions</a></li>
+          <li><a href="contact.html" class="current">Contact Me </a></li>
+          <li>
+            <a href="aboutme.html">About Me</a>
+            <ul>
+              <li><a href="aboutme/earlylife.html">Early Life</a></li>
+              <li><a href="aboutme/education.html">Education</a></li>
+              <li><a href="aboutme/hobbies.html">Hobbies</a></li>
+              <li><a href="aboutme/derek.html">Derek The Dog</a></li>
+        </ul>
+       </li>
+     </ul> 
+   </nav>
+
+
    <main>
         <div id="contact">
             <h3>Reach out to me!</h3>
@@ -38,7 +49,8 @@
             <img src="images/contactme.JPG" alt ="Icons of contact methods: phone, e-mail, social media, map">
             </center>
             <dl>
-                <dt><h4>Phone Number: Upon Request</h4></dt>
+                <dt><h4>Phone Number</h4></dt>
+                <p class="tel-link"><a href="tel:7207740475">(720) 774-0475</a></p>
                 <dd>If you're interested in reaching out to me over phonecall and text message, please e-mail and ask for my phone number!</dd>
                 <dt><h4>E-Mail: <a href="mailto:C835465296@colostate.edu">C835465296@colostate.edu</a></h4></dt>
                 <dd>For serious inquiries please allow me 48 hours to give you a response!</dd>

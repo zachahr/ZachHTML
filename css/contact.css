@@ -113,6 +113,15 @@ main {
   font-size: 1.25em;
 }
 
+.tel-link {
+    clear: left;
+    background-color:#002280;
+    padding: 1%;
+    margin: 0 auto;
+    width: 20%;
+    text-align: center;
+    border-radius: 5px;
+}
 
 /*Footer CSS*/
 footer p {
@@ -206,7 +215,7 @@ footer p{
 }
 
 #contact a {
-    color: #0a0066;
+    color: #000000;
     text-decoration: none;
 }
 
