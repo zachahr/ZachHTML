@@ -1,27 +1,18 @@
-/****Contact  Page CSS*****/
+/****Contact Page CSS*****/
 
-/*****************************
-    * Main CSS file for site
-    *Zach Ahr 10/21/2023 Main.css
- *****************************/
- /* Background Image */ 
- html {
+/***************************
+ * Main CSS file for site
+ * Zach Ahr 10/21/2023 Main.css
+ ***************************/
+/* Background Image */
+html {
     background-image: url("../images/background.jpg");
 }
 
-/* Header Gradient */ 
- header {
-    background-image: linear-gradient(45deg,white 0%, rgb(1, 1, 128) 75%, black 100%);
-    padding: .10900em 0.5%;
-}
-
-/* Zach Picture */ 
-header img {
-    float: left;
-    padding-right: 1.875%;
-    width: 10.6%;
-    max-width: 300px;
-    min-width: 40px;
+/* Header Gradient */
+header {
+    background-image: linear-gradient(45deg, white 0%, rgb(1, 1, 128) 75%, black 100%);
+    padding: 0.10900em 0.5%;
 }
 
 :root {
@@ -30,23 +21,25 @@ header img {
 
 body {
     background-color: #ccc;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
 
-/***Italics when hovering over clickable links*/
+/* Italics when hovering over clickable links */
 a:focus,
 a:hover {
     font-style: italic;
 }
 
 img {
-    max-width: 20%;
+    max-width: 100%; 
+    height: auto;
     display: block;
+    margin: 0 auto; /* Center images */
 }
 
-/*Navigation CSS*/
+/* Navigation CSS */
 #nav_menu {
-    clear:left;
+    clear: left;
 }
 
 #nav_menu ul {
@@ -69,11 +62,11 @@ img {
     float: none;
 }
 
-#nav_menu ul li:hover > ul {
+#nav_menu ul li:hover>ul {
     display: block;
 }
 
-#nav_menu > ul::after {
+#nav_menu>ul::after {
     content: "";
     display: block;
 }
@@ -91,7 +84,7 @@ img {
     text-align: center;
     display: block;
     color: #000000;
-    padding: 0.7em ;
+    padding: 0.7em;
     text-decoration: none;
     background-color: black;
     color: white;
@@ -101,21 +94,22 @@ img {
     color: blue;
 }
 
-#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+#nav_menu ul li a:hover,
+#nav_menu ul li a:focus {
     background-color: gray;
 }
 
-/*Main CSS*/
+/* Main CSS */
 main {
-  clear: left;
-  background-color: #fff;
-  padding: .12%;
-  font-size: 1.25em;
+    clear: left;
+    background-color: #fff;
+    padding: 0.12%;
+    font-size: 1.25em;
 }
 
 .tel-link {
     clear: left;
-    background-color:#002280;
+    background-color: #002280;
     padding: 1%;
     margin: 0 auto;
     width: 20%;
@@ -123,7 +117,7 @@ main {
     border-radius: 5px;
 }
 
-/*Footer CSS*/
+/* Footer CSS */
 footer p {
     font-size: 0.75em;
     text-align: center;
@@ -143,73 +137,12 @@ footer {
     background-image: linear-gradient(45deg, black 0%, rgb(25, 0, 255) 25%, white 100%);
 }
 
-footer p{
+footer p {
     font-size: 90%;
     text-align: center;
 }
 
-/*Navigation Menu */
-#nav_menu {
-    clear:left;
-}
-
-#nav_menu ul {
-    list-style: none;
-    position: relative;
-}
-
-#nav_menu ul li {
-    float: left;
-    width: 20%;
-}
-
-#nav_menu ul ul {
-    display: none;
-    position: absolute;
-    top: 100%
-}
-
-#nav_menu ul ul li {
-    float: none;
-}
-
-#nav_menu ul li:hover > ul {
-    display: block;
-}
-
-#nav_menu > ul::after {
-    content: "";
-    display: block;
-}
-
-#nav_menu ul {
-    margin: 0;
-    padding: 0;
-}
-
-#nav_menu ul li:hover ul {
-    width: 100%;
-}
-
-#nav_menu ul li a {
-    text-align: center;
-    display: block;
-    color: #000000;
-    padding: 0.7em ;
-    text-decoration: none;
-    background-color: black;
-    color: white;
-}
-
-#nav_menu ul li a.current {
-    color: blue;
-}
-
-#nav_menu ul li a:hover, #nav_menu ul li a:focus {
-    background-color: gray;
-}
-
-
+/* Contact Section */
 #contact {
     text-align: center;
 }
@@ -220,68 +153,82 @@ footer p{
 }
 
 #contact img {
-    text-align: center;
     display: block;
+    margin: 0 auto;
+    width: 20%;
+    max-width: 100%;
 }
 
 #mobile_menu {
     display: none;
 }
 
+/* Media Queries */
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Adjust styles for tablet */
+    /* ... Add tablet-specific styles here ... */
+}
+
+/* Desktop */
+@media only screen and (min-width: 1025px) {
+    /* Adjust styles for desktop */
+    /* ... Add desktop-specific styles here ... */
+}
+
 @media only screen and (max-width: 800px) {
     html {
-      background-image: none;
+        background-image: none;
     }
     body {
-      font-size: 90%;
-      box-shadow: none;
+        font-size: 90%;
+        box-shadow: none;
     }
-  }
-  
-  @media only screen and (max-width: 667px) {
+}
+
+@media only screen and (max-width: 667px) {
     #nav_menu {
-      display: none;
+        display: none;
     }
     #mobile_menu {
-      display: block;
+        display: block;
     }
     header h2 {
-      font-size: 200%;
+        font-size: 200%;
     }
-    section{
-      width: 90%;
-      float: none;
-      padding-left: 5%;
-      padding-bottom: .5em;
+    section {
+        width: 90%;
+        float: none;
+        padding-left: 5%;
+        padding-bottom: 0.5em;
     }
     aside {
-      width: 90%;
-      float: none;
-      padding: 0 5% 1em 5%;
+        width: 90%;
+        float: none;
+        padding: 0 5% 1em 5%;
     }
     #nav_list ul {
-      width: 50%;
-      padding-left: 25%;
-      text-align: center;
+        width: 50%;
+        padding-left: 25%;
+        text-align: center;
     }
     #nav_list ul li a {
-      padding-left: 0;
+        padding-left: 0;
     }
-  
-  
-  @media only screen and (max-width: 479px) {
+}
+
+@media only screen and (max-width: 479px) {
     header h2 {
-      font-size: 180%;
+        font-size: 180%;
     }
     header h3 {
-      font-size: 115%;
+        font-size: 115%;
     }
     section h1 {
-      font-size: 130%;
+        font-size: 130%;
     }
     section h1::first-letter {
-      font-size: 180%;
+        font-size: 180%;
     }
-  }
-  
-  }
+}

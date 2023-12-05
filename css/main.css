@@ -161,12 +161,12 @@ section p {
 
 section a {
     font-weight: bold;
-    color: orange;
+    color: rgb(47, 0, 255);
 }
 
 section a:link,
 main a:visited {
-    color: orange;
+    color: rgb(38, 0, 255);
 }
 
 /* Footer CSS */
