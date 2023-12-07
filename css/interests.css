@@ -21,27 +21,13 @@ main {
 }
 
 section {
-    font-size: 16px; /* Adjusted to match the base font size */
-}
-
-h1, h2, h3, p {
-    margin: 6;
-    padding: 6;
+    font-size: 16px; /
 }
 
 /* Header Gradient */
 header {
     background-image: linear-gradient(45deg, white 0%, rgb(1, 1, 128) 75%, black 100%);
     padding: .10900em 0.5%;
-}
-
-header h2 {
-    font-size: 230%;
-}
-
-header h3 {
-    font-size: 125%;
-    padding-bottom: .75em;
 }
 
 body {
@@ -133,10 +119,6 @@ section h1 {
     margin-bottom: .5em;
 }
 
-section h2, section h3, section h4 {
-    font-size: 100%; 
-    margin: .7em 0 .5em 0;
-}
 
 section p {
     margin-bottom: .5em;
