@@ -31,7 +31,7 @@ img {
     max-width: 100%; 
     height: auto;
     display: block;
-    margin: 0 auto; /* Center images */
+    margin: 0 auto; 
 }
 
 /* Navigation CSS */
@@ -191,7 +191,6 @@ footer p {
     display: none;
 }
 
-/* Media Queries */
 
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
