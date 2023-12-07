@@ -1,0 +1,237 @@
+/*****************************
+    * Derek the dog css file
+    * Zach Ahr 10/21/2023 Derek.css
+ *****************************/
+/* Background Image */
+html {
+    background-image: url("../images/background.jpg");
+}
+
+:root {
+    --global-color-1: #002280;
+}
+
+/* Shadow over quote on main page */
+.shadow {
+    text-shadow: 1px 1px 1px var(--global-color-1);
+}
+
+/* Main CSS */
+main {
+    clear: left;
+    background-color: #fff;
+    padding: .12%;
+    font-size: 1.25em;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 6;
+    padding: 6;
+}
+
+/* Header Gradient */
+header {
+    background-image: linear-gradient(45deg, white 0%, rgb(1, 1, 128) 75%, black 100%);
+    padding: .10900em 0.5%;
+}
+
+.dog-picture {
+    width: 150%; 
+    max-width: 300px; 
+    height: auto; 
+    display: block; 
+    margin: 0; 
+}
+
+header h2 {
+    font-size: 230%;
+}
+
+header h3 {
+    font-size: 125%;
+    padding-bottom: .75em;
+}
+
+body {
+    background-color: #ccc;
+    font-family: 'Roboto Slab', serif;
+}
+
+/*** Italics when hovering over clickable links */
+a:focus,
+a:hover {
+    font-style: italic;
+}
+
+/* Navigation CSS */
+#nav_menu {
+    clear: left;
+}
+
+#nav_menu ul {
+    list-style: none;
+    position: relative;
+}
+
+#nav_menu ul li {
+    float: left;
+    width: 20%;
+}
+
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%
+}
+
+#nav_menu ul ul li {
+    float: none;
+}
+
+#nav_menu ul li:hover>ul {
+    display: block;
+}
+
+#nav_menu>ul::after {
+    content: "";
+    display: block;
+}
+
+#nav_menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+#nav li {
+    font-family: 'Francois One', sans-serif;
+}
+
+#nav_menu ul li:hover ul {
+    width: 100%;
+}
+
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    color: #000000;
+    padding: 0.7em;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+}
+
+#nav_menu ul li a.current {
+    color: blue;
+}
+
+#nav_menu ul li a:hover,
+#nav_menu ul li a:focus {
+    background-color: gray;
+}
+
+/* Section */
+section {
+    width: 72.5%;
+    float: center;
+    padding: 1.25em 5% 1.25em 2.5%;
+}
+
+section h1 {
+    font-size: 140%;
+    margin-bottom: .5em;
+}
+
+section h2 {
+    font-size: 125%;
+    margin: .8em 0 .5em 0;
+}
+
+section h3 {
+    font-size: 110%;
+    margin: .8em 0 .5em 0;
+}
+
+section p {
+    margin-bottom: .5em;
+}
+
+section a {
+    font-weight: bold;
+    color: rgb(47, 0, 255);
+}
+
+section a:link,
+main a:visited {
+    color: rgb(38, 0, 255);
+}
+
+/* Footer CSS */
+footer p {
+    font-size: 0.75em;
+    text-align: center;
+    color: #000000;
+    padding: 0 1em;
+}
+
+footer p a {
+    color: #000000;
+    text-decoration: none;
+}
+
+footer {
+    clear: both;
+    border-top: 2px solid black;
+    padding: .9375em 1.875%;
+    background-image: linear-gradient(45deg, black 0%, rgb(25, 0, 255) 25%, white 100%);
+}
+
+footer p {
+    font-size: 90%;
+    text-align: center;
+}
+
+.tablet-only,
+.desktop-only {
+    display: none;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    html {
+        background-image: none;
+    }
+    body {
+        font-size: 90%;
+        box-shadow: none;
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    #nav_menu {
+        display: none;
+    }
+    #mobile_menu {
+        display: block;
+    }
+    header h2 {
+        font-size: 200%;
+    }
+    section {
+        width: 90%;
+        float: none;
+        padding-left: 5%;
+        padding-bottom: .5em;
+    }
+    .tablet-only {
+        display: block;
+    }
+    .desktop-only {
+        display: none;
+    }
+}
