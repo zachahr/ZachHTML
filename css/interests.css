@@ -11,6 +11,10 @@ html {
     --global-color-1: #002280;
 }
 
+/* Shadow over quote on main page */
+.shadow {
+    text-shadow: 1px 1px 1px var(--global-color-1);
+}
 
 /* Main CSS */
 main {
@@ -32,6 +36,14 @@ p {
 header {
     background-image: linear-gradient(45deg, white 0%, rgb(1, 1, 128) 75%, black 100%);
     padding: .10900em 0.5%;
+}
+
+.dog-picture {
+    width: 150%; 
+    max-width: 300px; 
+    height: auto; 
+    display: block; 
+    margin: 0; 
 }
 
 header h2 {
@@ -154,25 +166,6 @@ section a {
 section a:link,
 main a:visited {
     color: rgb(38, 0, 255);
-}
-
-/* Table styles */
-#education {
-    width: 100%;
-    margin-top: 20px;
-    border-collapse: collapse;
-}
-
-#education caption {
-    font-weight: bold;
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-#education th, #education td {
-    border: 1px solid #000000;
-    padding: 8px;
-    text-align: left;
 }
 
 /* Footer CSS */

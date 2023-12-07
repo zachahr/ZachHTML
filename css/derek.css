@@ -11,10 +11,6 @@ html {
     --global-color-1: #002280;
 }
 
-/* Shadow over quote on main page */
-.shadow {
-    text-shadow: 1px 1px 1px var(--global-color-1);
-}
 
 /* Main CSS */
 main {
