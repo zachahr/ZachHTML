@@ -1,9 +1,9 @@
 /****Contact Page CSS*****/
-
-
+/* Zach Ahr 10/21/2023 Derek.css
+*****************************/
 /* Background Image */
 html {
-    background-image: url("../images/background.jpg");
+    background-image: url("/images/background.jpg");
 }
 
 /* Header Gradient */
