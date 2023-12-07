@@ -69,6 +69,25 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3082.641234044889!2d-104.88914812347653!3d39.4096220163179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c99a5aa2f4725%3A0xeaa4436ea926386e!2sArapahoe%20Community%20College%20Sturm%20Campus!5e0!3m2!1sen!2sus!4v1698012631686!5m2!1sen!2sus"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </dl>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject" required>
+                    <option value="" disabled selected>Select a subject</option>
+                    <option value="general">Inquiry</option>
+                    <option value="collaboration">Collaboration</option>
+                    <option value="feedback">Feedback!</option>
+                </select>
+                <input type="submit" value="Submit">
+            </form>
         </section>
     </main>
 

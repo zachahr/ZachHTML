@@ -1,6 +1,6 @@
 /****Contact Page CSS*****/
 
- ***************************/
+
 /* Background Image */
 html {
     background-image: url("../images/background.jpg");
@@ -140,6 +140,12 @@ footer p {
 }
 
 /* Contact Section */
+#contact-form {
+    margin: 20px auto; 
+    max-width: 400px;
+    text-align: left; 
+}
+
 #contact {
     text-align: center;
 }
@@ -154,6 +160,31 @@ footer p {
     margin: 0 auto;
     width: 20%;
     max-width: 100%;
+}
+
+#contact-form {
+    margin-top: 20px;
+    max-width: 400px;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea,
+#contact-form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#contact-form input[type="submit"] {
+    background-color: #002280;
+    color: #fff;
+    cursor: pointer;
 }
 
 #mobile_menu {

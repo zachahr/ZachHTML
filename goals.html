@@ -1,1 +1,109 @@
-to do
+<!DOCTYPE html>
+<!---Zach Ahr Goals 10/15/2023-->
+<html lang="en">
+  <head>
+     <meta charset="utf-8"> 
+     <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <title>Goals & Ambitions</title>
+     <link rel="stylesheet" href="css/goals.css" />
+     <link rel="stylesheet" href="css/slicknav.css" />
+     <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab&display=swap" rel="stylesheet">
+     <link rel="zalogo icon" href="images/zalogo.ico" />
+     <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="js/jquery.slicknav.min.js"></script>
+     <script type="text/javascript">
+        $(document).ready(function () {
+             $("#nav_menu").slicknav({prependTo:"#mobile_menu" });
+        });
+   </script>   
+</head>
+
+<!--Header -->
+<body>
+    <header>
+        <h1>Goals & Ambitions</h1>
+        <blockquote>
+            <span class="shadow">&ldquo;I have always served the public to the best of my ability. Why? Because, like every other man, it is to my interest to do so.&rdquo; - Cornelius Vanderbilt</span>
+        </blockquote>
+    </header>
+
+
+
+<!----Navigation-->
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+           <li><a href="index.html">Home</a></li> 
+           <li><a href="interests.html">Interests</a></li>
+           <li><a href="goals.html" class="current" >Goals & Ambitions</a></li>
+           <li><a href="contact.html">Contact Me </a></li>
+           <li>
+             <a href="aboutme.html">About Me</a>
+             <ul>
+               <li><a href="aboutme/earlylife.html">Early Life</a></li>
+               <li><a href="aboutme/education.html">Education</a></li>
+               <li><a href="aboutme/hobbies.html">Hobbies</a></li>
+               <li><a href="aboutme/derek.html">Derek The Dog</a></li>
+         </ul>
+        </li>
+      </ul> 
+    </nav>
+
+<!----Main Webpage Content-->           
+<main>
+    <section>
+        <h2>Goals</h2>
+        <p>When thinking of things I want to do both in my career and my personal life there are a plethora of things I could think of doing.
+            Obviously the primary one being starting a career in Cybersecurity after completing college. During my time at both ACC and CSU
+            Pueblo I have learned a plethora of skills pertaining to Computer Science, Cybersecurity and several of its branching paths with
+            their own respective traits and specializations.
+        </p>
+        <h2>Brief Overview of Resume</h2>
+        <p>Below, I'm going to list a few qualifications that I have taken at ACC/CSU or am in the process of earning. </p> 
+            
+        <table id="education">
+            <thead>
+                <tr>
+                    <th>Education</th>
+                    <th>Date Earned / Anticipated</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bachelor of Science, Computer Information Systems - COLORADO STATE UNIVERSITY PUEBLO</td>
+                    <td>Spring 2024</td>
+                </tr>
+                <tr>
+                    <td>Associate of Applied Science, Computer Information Systems - ARAPAHOE COMMUNITY COLLEGE, Castle Rock, CO</td>
+                    <td>August 2022</td>
+                </tr>
+                <tr>
+                    <td>High School Diploma - STEM HIGH SCHOOL, Highlands Ranch, CO </td>
+                    <td>May 2019</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <article class='desktop-only'>
+            <p>
+                This paragraph is visible only in desktop mode
+            </p>
+        </article>
+        
+        <article class='tablet-only'>
+            <p>
+                This paragraph is visible only in tablet mode
+            </p>
+        </article>
+     </section>
+</main>
+
+<!----Footer-->
+    <footer>
+        <p>&copy; 2023, Zach Ahr</p>
+        <p>Created by Zach Ahr for CIS 311</p>
+        <p><a href="mailto:C835465296@colostate.edu">C835465296@colostate.edu</a></p> 
+    </footer>
+
+</body>
+</html>
