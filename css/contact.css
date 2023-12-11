@@ -127,16 +127,29 @@ footer p a {
     text-decoration: none;
 }
 
+footer a {
+    display: inline-block;
+    vertical-align: middle;
+}
+
 footer {
     clear: both;
     border-top: 2px solid black;
+    text-align: center;
     padding: .9375em 1.875%;
     background-image: linear-gradient(45deg, black 0%, rgb(25, 0, 255) 25%, white 100%);
 }
 
 footer p {
     font-size: 90%;
-    text-align: center;
+}
+
+footer img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50px; 
+    margin-right: 10px; 
+   
 }
 
 /* Contact Section */
